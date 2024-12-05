@@ -1,0 +1,193 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride-zone Cab's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .navbar {
+          position: fixed;
+          z-index: 1;
+          width: 100%;
+      }
+
+      
+      .nav-link.active {
+          border-bottom: 2px solid #007bff;
+          text-decoration: none; 
+      }
+
+      
+      .nav-link:hover {
+          text-decoration: none; 
+          border-bottom: 1px solid #007bff; 
+      }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid nav">
+      <a class="navbar-brand hcab" href="#">Ride-zone Cab's</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="ride.html">Ride</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+          </ul>
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search for a Cab" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </div>
+  </div>
+</nav>
+
+<script>
+  const navLinks = document.querySelectorAll('.nav-link');
+  function highlightActiveLink() {
+      navLinks.forEach(link => {
+          link.classList.remove('active'); 
+          if (link.href === window.location.href) {
+              link.classList.add('active'); 
+          }
+      });
+  }
+  highlightActiveLink();
+</script>
+
+    <header>
+      <div class="about">
+        <div class="about-cont">
+          <div class="about-img">
+            <img src="assets/about/phone.jpg">
+            <img src="assets/about/cab.jpg" style="margin-left: 15rem; margin-top: 3rem;">
+            <img src="assets/about/payment.jpg" style="margin-left: 27rem; margin-top: 3rem;">
+          </div>
+            <div class="about-cont-text">
+            <div class="about-title">Your Smart Solution <p>for City Transportation</p></div>
+            <div class="about-text"><i class="fa-solid fa-arrow-right" style="padding-right: 0.5rem;"></i>Welcome to Ride-Cone Cabs, your go-to for safe, reliable, and affordable travel. 
+              Since our launch, we've transformed city transportation, offering seamless and efficient solutions at your fingertips.
+            </div>
+            <div class="about-text"><i class="fa-solid fa-arrow-right" style="padding-right: 0.5rem;"></i>We prioritize customer well-being with cutting-edge technology, safety-first practices, and user-friendly
+              services. Whether it’s a quick commute, an airport transfer, or city-wide travel, our platform caters to all your needs.
+              suggest good title for this
+            </div>
+            <div class="about-text"><i class="fa-solid fa-arrow-right" style="padding-right: 0.5rem;"></i>Our hassle-free payment options include digital wallets, credit cards, and bank transfers, ensuring a 
+              secure and smooth experience every time. With Ride-Zone Cab's, enjoy affordable, last-mile connectivity, professional drivers, 
+              clean vehicles, and an easy-to-use app for booking and tracking rides.
+            </div>
+            </div>
+        </div>
+        <div class="about-cont-one">
+          <div class="cont-title"><center>Our Vision</center></div>
+          <div class="cont-text"><center><b>To revolutionize urban transportation by offering a service that is not only efficient and safe but also
+            environmentally conscious and affordable for all.</b></center></div>
+          </div>
+      </div>
+    </header>
+
+    <main>
+      <div class="sucess">
+        <div class="sucess-title">Our Success story</div>
+        <div class="sucess-text"><p>• Ride-zone Cab's has made significant strides since its launch just 6 months ago. Through hard work 
+          and dedication, </p><p>we've quickly carved out a place in the market. As a brand and service, we are constantly striving to evolve 
+          and redefine </p><p>urban transportation, ensuring we provide the best possible experience for our customers.</p></div>
+      </div>
+
+      <div class="core">
+        <div class="core-title">Core Values</div>
+        <div class="core-text">
+          <p>• Customer-Centric Approach: Every decision we make revolves around ensuring the comfort and
+            safety of our riders.</p>
+          <p>• Innovation: We embrace technology to continually improve our services and provide a seamless
+            experience for our users.</p>
+          <p>• Reliability: You can always count on us for timely, safe, and affordable rides.</p>
+          <p>• Sustainability: We are committed to making our operations eco-friendly, reducing carbon
+            footprints one ride at a time.</p>
+        </div>
+      </div>
+
+      <div class="impacts">
+        <div class="impacts-title">Our impact</div>
+        <div class="impacts-text"><p>• We have redefined intra-city travel by making last-mile connectivity easier and more affordable.
+           With our growing presence, we are continually refining our safety protocols and enhancing the overall experience to serve
+           the community better.</p>
+           <p>• At Ride-zone Cab's, we believe that your journey should be as enjoyable as your destination. Join us as we continue to change
+             the landscape of urban transportation, one ride at a time.</p>
+        </div>
+      </div>
+
+      <div class="cont-text end"><center><b>Ride-zone Cab's focus on safety, innovation, and customer satisfaction, showcasing the brand's 
+        core values and goals. Let me know if you'd like any changes!</b></center></div>
+    </main>
+
+    <footer style="margin-top: 4rem;">
+      <div class="footerr">
+        <div class="footer">
+          <div class="footer-title">Ride-zone Cab's</div>
+          <div class="footer-icon">
+            <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+            <div class="icons"><i class="fa-brands fa-youtube"></i></div>
+            <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+            <div class="icons"><i class="fa-brands fa-facebook"></i></div>
+          </div>
+        </div>
+
+        <div class="footer">
+          <div class="footer-text">Book a cab</div>
+          <div class="footer-text">Drive with us</div>
+          <div class="footer-text">Outstation</div>
+          <div class="footer-text">Rental</div>
+          <div class="footer-text">Ride-zone Money</div>
+          <div class="footer-text">Corporate</div>
+        </div>
+
+        <div class="footer">
+          <div class="footer-text">About us</div>
+          <div class="footer-text">Contact us</div>
+          <div class="footer-text">Support</div>
+          <div class="footer-text">Careers</div>
+          <div class="footer-text">Media centre</div>
+        </div>
+
+        <div class="footer">
+          <div class="footer-text">Cars</div>
+          <div class="footer-text">Bikes</div>
+          <div class="footer-text">Autos</div>
+          <div class="footer-text">Press</div>
+        </div>
+      </div>
+      <center><hr></center>
+      <div class="copyright">
+        <div class="copy-text">Copyright 2024 Ride-zone Cab Mobility Pvt Ltd. All Rights Reservecl</div>
+        <div class="copy-text-two">Notices</div>
+        <div class="copy-text-three">Privacy Policy</div>
+        <div class="copy-text-three">Terms of Service</div>
+        <div class="copy-text-four">India</div>
+      </div>
+    </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+  </body>
+</html>

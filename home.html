@@ -1,0 +1,341 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Ride-zone Cab's</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap" rel="stylesheet">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/css/bootstrap.min.css" rel="stylesheet" integrity="sha384-QWTKZyjpPEjISv5WaRU9OFeRpok6YctnYmDr5pNlyT2bRjXh0JMhjY6hW+ALEwIH" crossorigin="anonymous">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="style.css">
+    <style>
+      .navbar {
+          position: fixed;
+          z-index: 1;
+          width: 100%;
+      }
+
+      
+      .nav-link.active {
+          border-bottom: 2px solid #007bff;
+          text-decoration: none; 
+      }
+
+      
+      .nav-link:hover {
+          text-decoration: none; 
+          border-bottom: 1px solid #007bff; 
+      }
+  </style>
+</head>
+<body>
+
+<nav class="navbar navbar-expand-lg bg-body-tertiary">
+  <div class="container-fluid nav">
+      <a class="navbar-brand hcab" href="#">Ride-zone Cab's</a>
+      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarSupportedContent" aria-controls="navbarSupportedContent" aria-expanded="false" aria-label="Toggle navigation">
+          <span class="navbar-toggler-icon"></span>
+      </button>
+      <div class="collapse navbar-collapse" id="navbarSupportedContent">
+          <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+              <li class="nav-item">
+                  <a class="nav-link" href="home.html">Home</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="ride.html">Ride</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="aboutus.html">About Us</a>
+              </li>
+              <li class="nav-item">
+                  <a class="nav-link" href="contactus.html">Contact Us</a>
+              </li>
+          </ul>
+          <form class="d-flex" role="search">
+              <input class="form-control me-2" type="search" placeholder="Search for a Cab" aria-label="Search">
+              <button class="btn btn-outline-success" type="submit">Search</button>
+          </form>
+      </div>
+  </div>
+</nav>
+
+<script>
+  const navLinks = document.querySelectorAll('.nav-link');
+  function highlightActiveLink() {
+      navLinks.forEach(link => {
+          link.classList.remove('active'); 
+          if (link.href === window.location.href) {
+              link.classList.add('active'); 
+          }
+      });
+  }
+  highlightActiveLink();
+</script>
+
+      <header>
+        <div class="photo">
+            <img src="assets/home.jpg" style="height: 80vh; width: 100%; margin-top: 3.8rem;">
+        </div>
+      </header>
+
+      <main>
+        <div class="intro">
+            <center><h2>Your Ride, Anytime, Anywhere</h2></center>
+            <center><p>Book your cab with us for a safe and comfortable ride.</p></center>
+            <center><a href="ride.html"><button type="button" class="btn btn-success">Book Now</button></a></center>
+        </div>
+
+        <div class="rides">
+          <div class="head">There's an Ride-zone, ride for Everyone</div>
+            <div class="ride">
+            <div class="card" style="width: 19rem;">
+              <img src="assets/ride-budget.svg" class="card-img-top" alt="assets/ride-budget">
+              <div class="card-body">
+                <h5 class="card-title">For any budget</h5>
+                <p class="card-text">From Bikes and Autos to Prime Sedans
+                  and Prime SUVs, you will find a ride in
+                  your budget at your convenience any
+                  time.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 19rem;">
+              <img src="assets/ride-distance.svg" class="card-img-top" alt="ride-distance">
+              <div class="card-body">
+                <h5 class="card-title">For any distance</h5>
+                <p class="card-text">Book rides within the city with Daily, or
+                  take a trip to your favourite
+                  destinations outside the city with
+                  Outstation.</p>
+              </div>
+            </div>
+
+            <div class="card" style="width: 19rem;">
+              <img src="assets/ride-duration.svg" class="card-img-top" alt="ride-duration">
+              <div class="card-body">
+                <h5 class="card-title">For any duration</h5>
+                <p class="card-text">Easily plan a day out without having to
+                  worry about conveyance with an hour-
+                  based package from Rental.</p>
+              </div>
+            </div>
+          </div>
+       </div>
+      
+        <div class="safties">
+          <div class="safety">
+            <div class="safety-title">Safety for all.</div>
+            <div class="safety-text">At Ride-zone Cab's, your safety and comfort come first. As a recently entered the market, we’ve gained valuable experiences, 
+              and we are dedicated to setting high standards in customer care by introducing advanced safety measures and 
+              ensuring every ride is a smooth and enjoyable experience. With Ride-Zone Cab's, you can trust us to redefine 
+              your travel experience with reliability and comfort.</div>
+          </div>
+          <div class="saftey-img">
+            <img src="assets/safety.png" style="height: 400px; width: 400px;">
+            <img src="assets/customer.jpg" style="height: 300px; width: 300px;">
+          </div>
+        </div>
+
+        <div class="main">
+          <div class="payment">
+            <div class="pay-one">
+            <div class="pay-title"><i class="fa-regular fa-credit-card" style="padding-right: 1rem;"></i>Experience the<p>smarter way to Pay</p></div>
+            <div class="pay-text">
+              <p><i class="fa-solid fa-arrow-right" style="padding-right: 0.5rem;"></i>
+                Forget about cash or exact change! At Ride-Zone Cab's, we offer a smarter, hassle-free
+                way to pay. With flexible options like digital wallets, credit cards, and bank transfers, 
+                paying for your ride is quick and easy.
+              </p>
+              <p><i class="fa-solid fa-arrow-right" style="padding-right: 0.5rem;"></i>
+                Our system is secure, fast, and reliable, ensuring stress-free payments. Just pick your
+                preferred method, complete the transaction seamlessly, and enjoy a comfortable ride.
+                With Ride-Zone Cab's, paying has never been easier!
+              </p>
+              <p><i class="fa-solid fa-arrow-right" style="padding-right: 0.5rem;"></i>
+                Choose convenience. Choose the smarter way to pay with Ride-Zone Cab's.
+              </p>
+            </div>
+          </div>
+          <div class="pay-two">
+            <div class="online"><img src="assets/online-payment.png" style="margin-top: 6rem;">
+            <img src="assets/cash.png" style="height: 180px; width: 180px; margin-left:5rem; margin-top: 6rem;"></div>
+            <div class="cash"><img src="assets/cardpay.png" style="height: 200px; width: 250px; margin-left: 10rem;"></div>
+          </div>
+          </div>
+
+          <div class="new">
+            <center><div class="new-title">What's in Ride-Zone for you</div></center>
+
+            <div class="new-card-one">
+              <div class="new-card" style="width: 18rem;">
+                <img src="assets/new1.jpg" class="card-img-top" alt="" style="height: 150px; width: 200px;">
+                <div class="card-body">
+                  <h5 class="new-card-title" style="padding-left: 1.65rem;">Doorstep Pick-Up</h5>
+                  <p class="new-card-text">We will pick you up from where you are and
+                    drop you exactly where you need to be.</p>
+                </div>
+              </div>
+              <div class="new-card" style="width: 18rem;">
+                <img src="assets/new2.jpg" class="card-img-top" alt="" style="height: 150px; width: 200px;">
+                <div class="card-body">
+                  <h5 class="new-card-title" style="padding-left: 1.65rem;">Affordability</h5>
+                  <p class="new-card-text">No more latent prices and shocked reactions
+                    after seeing the final ride cost. We're here
+                    with the most affordable rides for all.</p>
+                </div>
+              </div>
+              <div class="new-card" style="width: 18rem;">
+                <img src="assets/new3.jpg" class="card-img-top" alt="" style="height: 150px; width: 200px;">
+                <div class="card-body">
+                  <h5 class="new-card-title" style="padding-left: 1.65rem;">Quick Ride</h5>
+                  <p class="new-card-text">Trend setters of smart commute be it traffic
+                    or rush hours.</p>
+                </div>
+              </div>
+            </div>
+
+            <div class="new-card-two">
+              <div class="new-card" style="width: 18rem;">
+                <img src="assets/new4.jpg" class="card-img-top" alt="" style="height: 150px; width: 200px;">
+                <div class="card-body">
+                  <h5 class="new-card-title" style="padding-left: 1.65rem;">Zero Pressure Rides</h5>
+                  <p class="new-card-text">Gives a Captain more room in a day without
+                    hampering their daily activities. You can
+                    decide on when to go on the next ride.</p>
+                </div>
+              </div>
+              <div class="new-card" style="width: 18rem;">
+                <img src="assets/new5.jpg" class="card-img-top" alt="" style="height: 150px; width: 200px;">
+                <div class="card-body">
+                  <h5 class="new-card-title" style="padding-left: 1.65rem;">Redeemable Earnings</h5>
+                  <p class="new-card-text">What's the use of getting paid when you
+                    can't withdraw money when you want to?
+                    Redeems can be transferred from Ride-zone
+                    wallet to your bank account at your
+                    convenience.</p>
+                </div>
+              </div>
+              <div class="new-card" style="width: 18rem;">
+                <img src="assets/new6.jpg" class="card-img-top" alt="" style="height: 150px; width: 200px;">
+                <div class="card-body">
+                  <h5 class="new-card-title" style="padding-left: 1.65rem;">Insured Rides</h5>
+                  <p class="new-card-text">All rides are insured. Accidental coverage
+                    and medical benefits covered up to Rs 5
+                    Lakh for Captain & family.</p>
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+
+        <center>
+          <div class="impact">
+            <div class="impact-title">Our Impact</div>
+            <div class="impact-text">Our presence has transformed intra-city travel, making last-mile connectivity 
+              more accessible and affordable for everyone. At Ride-Zone Cab's, we’re redefining how people move within 
+              the city with convenience and cost-efficiency at the forefront.</div>
+            <div class="impact-imgs">
+              <div class="img"><i class="fa-solid fa-download"></i>
+                <h6 class="img-cont">1 K</h6>
+                <h6 class="img-conts">Downloads</h6>
+              </div>
+              <div class="img"><i class="fa-solid fa-city"></i>
+                <h6 class="img-cont">10+</h6>
+                <h6 class="img-conts">Cities</h6>
+              </div>
+              <div class="img"><i class="fa-solid fa-user"></i>
+                <h6 class="img-cont">500+</h6>
+                <h6 class="img-conts">Captain's</h6>
+              </div>
+              <div class="img"><i class="fa-solid fa-face-smile"></i>
+                <h6 class="img-cont">100 +K</h6>
+                <h6 class="img-conts">Customers</h6>
+              </div>
+            </div>
+          </div>
+        </center>
+
+        <div class="review">
+          <div class="review-title">Real Experiences, Real Stories</div>
+          <div class="reviews">
+          <div class="review-card" style="width: 28rem;">
+            <img src="assets/review1.png" class="card-img-top" alt="" style="height: 150px; width: 200px;">
+            <div class="card-body">
+              <p class="review-card-text"><b>"Ride-Zone Cab's has made my daily commute so much easier! The web-app is user-friendly, 
+                and I love the flexible payment options. Highly recommended!"</b></p>
+              <h5 class="review-card-title" style="padding-left: 1.65rem;">~ Aashu P.</h5>
+            </div>
+          </div>
+          <div class="review-card" style="width: 28rem;">
+            <img src="assets/review2.png" class="card-img-top" alt="" style="height: 150px; width: 200px;">
+            <div class="card-body">
+              <p class="review-card-text"><b>"I’ve been using Ride-Zone for months, and I must say, the service is reliable and safe. 
+                The drivers are professional, and I always feel comfortable on my rides."</b></p>
+              <h5 class="review-card-title" style="padding-left: 1.65rem;">~ Harsh A.</h5>
+            </div>
+          </div>
+          <div class="review-card" style="width: 28rem;">
+            <img src="assets/review3.png" class="card-img-top" alt="" style="height: 150px; width: 200px;">
+            <div class="card-body">
+              <p class="review-card-text"><b>"Affordable prices, clean cars, and on-time pickups! Ride-Zone has truly set a new standard 
+                for cab services in the city."</b></p>
+              <h5 class="review-card-title" style="padding-left: 1.65rem;">~ Priti K.</h5>
+            </div>
+          </div>
+        </div>
+        </div>
+      </main>
+
+      <footer>
+        <div class="footerr">
+          <div class="footer">
+            <div class="footer-title">Ride-zone Cab's</div>
+            <div class="footer-icon">
+              <div class="icons"><i class="fa-brands fa-instagram"></i></div>
+              <div class="icons"><i class="fa-brands fa-youtube"></i></div>
+              <div class="icons"><i class="fa-brands fa-twitter"></i></div>
+              <div class="icons"><i class="fa-brands fa-facebook"></i></div>
+            </div>
+          </div>
+
+          <div class="footer">
+            <div class="footer-text">Book a cab</div>
+            <div class="footer-text">Drive with us</div>
+            <div class="footer-text">Outstation</div>
+            <div class="footer-text">Rental</div>
+            <div class="footer-text">Ride-zone Money</div>
+            <div class="footer-text">Corporate</div>
+          </div>
+
+          <div class="footer">
+            <div class="footer-text">About us</div>
+            <div class="footer-text">Contact us</div>
+            <div class="footer-text">Support</div>
+            <div class="footer-text">Careers</div>
+            <div class="footer-text">Media centre</div>
+          </div>
+
+          <div class="footer">
+            <div class="footer-text">Cars</div>
+            <div class="footer-text">Bikes</div>
+            <div class="footer-text">Autos</div>
+            <div class="footer-text">Press</div>
+          </div>
+        </div>
+        <center><hr></center>
+        <div class="copyright">
+          <div class="copy-text">Copyright 2024 Ride-zone Cab Mobility Pvt Ltd. All Rights Reservecl</div>
+          <div class="copy-text-two">Notices</div>
+          <div class="copy-text-three">Privacy Policy</div>
+          <div class="copy-text-three">Terms of Service</div>
+          <div class="copy-text-four">India</div>
+        </div>
+      </footer>
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.3/dist/js/bootstrap.bundle.min.js" integrity="sha384-YvpcrYf0tY3lHB60NNkmXc5s9fDVZLESaAA55NDzOxhy9GkcIdslK1eN7N6jIeHz" crossorigin="anonymous"></script>
+    <script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/@popperjs/core@2.11.6/dist/umd/popper.min.js"></script>
+    <script src="https://stackpath.bootstrapcdn.com/bootstrap/5.3.0/js/bootstrap.min.js"></script>
+</body>
+</html>
